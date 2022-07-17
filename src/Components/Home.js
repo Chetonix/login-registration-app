@@ -10,6 +10,7 @@ console.log("Home called");
  const [data, setData] = useState(null);
  const [loading, setLoading] = useState(true);
  const [error, setError] = useState(null);
+  const [toggleInfo, setToggleInfo] = useState(false);
 
   useEffect(() => {
     fetch(`https://hoblist.com/api/movieList`, {
@@ -49,7 +50,22 @@ console.log("Home called");
 
   return (
     <div className="container__home">
-      <h1>Movies Posts</h1>
+      
+      <h1 onClick={()=> setToggleInfo(!toggleInfo)}>Company Info</h1>
+      {toggleInfo ? (<>
+      <div className="outer">
+        <div className="inner">
+        <p>Company: Geeksynergy Technologies Pvt Ltd</p>
+<p>Address: Sanjayanagar, Bengaluru-56</p>
+<p>Phone: XXXXXXXXX09</p>
+<p>Email: XXXXXX@gmail.com</p>
+        </div>
+      </div>
+      
+      </>) : (
+      <>
+      <h3>Movies Posts</h3>
+      
       {loading && <div>A moment please...</div>}
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
@@ -60,8 +76,10 @@ console.log("Home called");
             <MovieCard key={d.id} info={d}/>
           ))}
       </div>
+      </>
+      )}
     </div>
-  );
+    );
 }
 
 
