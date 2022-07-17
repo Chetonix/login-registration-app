@@ -46,7 +46,7 @@ console.log("Home called");
   }, []);
 
   return (
-    <div className="App">
+    <div className="container">
       <h1>Movies Posts</h1>
       {loading && <div>A moment please...</div>}
       {error && (

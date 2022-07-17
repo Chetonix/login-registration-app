@@ -8,7 +8,11 @@ function MovieCard(props) {
     <div className='container'>
         <img src={poster} alt="movie-poster" />
         <div className="movie-info">
-            
+            <h4>{title}</h4> 
+            <p>Genre: {genre}</p>
+            <p>Director: </p>
+            <p>Starring: </p>
+            <p>{pageViews} | Voted by {totalVoted} people</p>
         </div>
     </div>
   )
