@@ -4,6 +4,7 @@ function MovieCard(props) {
 
     const {id, title, genre, director, stars, pageViews, language, totalVoted, releasedDate, poster, runTime} = props.info;
 
+    console.log(stars);
 
   return (
     <div className='card'>
