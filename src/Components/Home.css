@@ -13,5 +13,11 @@
     gap: 10px;
     width: 400px;
     justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.container__home h1 {
+    text-align: center;
 }
 
