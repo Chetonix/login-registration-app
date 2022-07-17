@@ -2,10 +2,15 @@ import React from 'react'
 
 function MovieCard(props) {
 
-    const {id, title, } = props.info;
+    const {id, title, genre, director, stars, pageViews, language, totalVoted, releasedDate, poster, runTimß} = props.info;
 
   return (
-    <div>MovieCard</div>
+    <div className='container'>
+        <img src={poster} alt="movie-poster" />
+        <div className="movie-info">
+            
+        </div>
+    </div>
   )
 }
 
