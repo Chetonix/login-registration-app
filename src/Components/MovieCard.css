@@ -17,5 +17,8 @@
 }
 
 .card__body {
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: clip;
     margin-left: 10px;
 }

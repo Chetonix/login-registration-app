@@ -5,9 +5,13 @@
 
 
 .movie__page {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-
+    grid-gap: 15px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    justify-content: center;
 }
 
