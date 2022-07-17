@@ -5,9 +5,9 @@
     border-radius: 10px;
     box-shadow: 0 0 10px 5px grey;
     /* background-color: red; */
-    gap: 10px;
+    gap: 0px;
     /* justify-content: space-between; */
-    margin: 5px;
+    margin: 2px;
 }
 
 .card__image {
@@ -24,4 +24,23 @@
     overflow: hidden;
     text-overflow: clip;
     margin-left: 10px;
+    font-size: 40px;
+}
+p::after {
+    margin: 0px;
+    padding: 0px;
+}
+p::before {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin: 0px;
+    font-size: 18px;
+    color: grey;
+}
+
+p > span {
+    color: black;
+    font-weight: 500;
 }

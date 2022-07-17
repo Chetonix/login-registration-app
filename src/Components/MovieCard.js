@@ -4,17 +4,16 @@ function MovieCard(props) {
 
     const {id, title, genre, director, stars, pageViews, language, totalVoted, releasedDate, poster, runTime} = props.info;
 
-    console.log(stars);
 
   return (
     <div className='card'>
         <img src={poster} alt="movie-poster" className='card__image'/>
         <div className="card__body">
-            <h4>{title}</h4> 
-            <p>Genre: {genre}</p>
-            <p>{director[0] ? `Director: ${director[0]}` : 'Director: '}</p>
-            <p>Starring: </p>
-            <p>{pageViews} | Voted by {totalVoted} people</p>
+            <h3>{title}</h3> 
+            <p><span>Genre:</span> {genre}</p>
+            <p><span>Director:</span> {director[0]}</p>
+            <p><span>Starring:</span> {stars[0]}</p>
+            <p><span>Views:</span> {pageViews} | <span>Voted</span> by {totalVoted} people</p>
         </div>
     </div>
   )
