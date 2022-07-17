@@ -1,0 +1,13 @@
+.container__home {
+    margin: 40px;
+    padding: 10px;
+}
+
+
+.movie__page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+
+}
+

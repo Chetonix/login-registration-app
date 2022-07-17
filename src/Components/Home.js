@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
+import "./Home.css";
+
 function Home() {
 
 console.log("Home called");
@@ -52,12 +54,12 @@ console.log("Home called");
       {error && (
         <div>{`There is a problem fetching the post data - ${error}`}</div>
       )}
-      <ul>
+      <div className="movie__page">
         {data &&
           data.result.map((d) => (
             <MovieCard key={d.id} info={d}/>
           ))}
-      </ul>
+      </div>
     </div>
   );
 }

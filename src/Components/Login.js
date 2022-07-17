@@ -32,7 +32,9 @@ function Login() {
   return (
     <div>
       {home ? (
-        <form onSubmit={handleLogin}>
+              <div className="outer">
+              <div className="inner">
+          <form onSubmit={handleLogin}>
           <h3>LogIn</h3>
           <div className="form-group">
             <label>Email</label>
@@ -63,7 +65,9 @@ function Login() {
               Fill correct Info else keep trying.
             </Alert>
           )}
-        </form>
+          </form>
+        </div>
+        </div>
       ) : (
         <Home />
       )}

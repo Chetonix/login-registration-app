@@ -45,6 +45,8 @@ function Registration() {
         <div>
           {" "}
           {login ? (
+                  <div className="outer">
+                  <div className="inner">
             <form onSubmit={handleFormSubmit}>
               <h3>Register</h3>
 
@@ -116,6 +118,8 @@ function Registration() {
                 </Alert>
               )}
             </form>
+            </div>
+            </div>
           ) : (
             <Login />
           )}

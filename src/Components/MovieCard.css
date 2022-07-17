@@ -4,15 +4,18 @@
     flex-direction: row;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px grey;
-    background-color: red;
+    /* background-color: red; */
+    gap: 15px;
+    /* justify-content: space-between; */
 }
 
 .card__image {
-    width: 14rem;
+    width: 140px;
     height: auto;
+    border-radius: 10px;
     object-fit: cover;
 }
 
 .card__body {
-
+    margin-left: 10px;
 }
