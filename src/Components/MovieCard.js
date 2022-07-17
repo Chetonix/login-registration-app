@@ -1,13 +1,13 @@
 import React from 'react'
-
+import './MovieCard.css';
 function MovieCard(props) {
 
-    const {id, title, genre, director, stars, pageViews, language, totalVoted, releasedDate, poster, runTimß} = props.info;
+    const {id, title, genre, director, stars, pageViews, language, totalVoted, releasedDate, poster, runTime} = props.info;
 
   return (
-    <div className='container'>
-        <img src={poster} alt="movie-poster" />
-        <div className="movie-info">
+    <div className='card'>
+        <img src={poster} alt="movie-poster" className='card__image'/>
+        <div className="card__body">
             <h4>{title}</h4> 
             <p>Genre: {genre}</p>
             <p>Director: </p>

@@ -1,5 +1,18 @@
-.container {
-    /* max-width: 100px; */
-    display: grid;
-    grid-template-columns: 45px 1fr;
+.card {
+    
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px grey;
+    background-color: red;
+}
+
+.card__image {
+    width: 14rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.card__body {
+
 }
